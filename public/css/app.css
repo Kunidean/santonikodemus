@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#subbuttn{
+    text-align: center;
+    color: white;
+  }
+  
+  .dropbtn {
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: #009CAD;}
+
+.header-font {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.aktivitas-sm {
+    background-color: #009CAD;
+    width: 500px;
+    padding: 10px 20px;
+    margin: 15px;
+}
+
+.renungan-sm {
+  background-color: #009CAD;
+  width: 1000px;
+  padding: 10px 20px;
+  margin: 15px;
+}
+
+.aktivitas-show {
+    width: 1000px;
+    padding: 10px 20px;
+    margin: 15px;
+}
+
+.act-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.date-author {
+    font-size: 13.5px;
+}
+
+.more {
+    font-weight: bold;
+}
+
+.other-text {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.del-button {
+  color: red;
+  font-weight: bold;
+}
+
+.edit-button {
+  color: blue;
+  font-weight: bold;
+}
