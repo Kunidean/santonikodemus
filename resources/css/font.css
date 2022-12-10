@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#notelp{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 55;
+    color: #ffffff;
+    padding-right: 100px;
+}
+#greja{
+    font-size: 30;
+    color: #009CAD;
+    padding-left: 100px;
+
+}
+
+#home{
+    font-size: 55;
+    color: #ffffff;
+    padding-right: 100px;
+
+}
+
+#about{
+    font-size: 55;
+    color: #ffffff;
+    padding-right: 100px;
+
+}
+
+#karya{
+    font-size: 55;
+    color: #ffffff;
+    padding-right: 100px;
+
+}
+#sakramen{
+    font-size: 55;
+    color: #ffffff;
+    padding-right: 100px;
+
+}
+
+#informasi{
+    font-size: 55;
+    color: #ffffff;
+    padding-lef: 100px;
+
+}
+
+#info{
+    font-size: 20;
+    color: #ffffff;
+    padding-left: 100px;
+
+}
+
+#login{
+    position: relative;
+    font-size: 20;
+    color: #ffffff;
+}
