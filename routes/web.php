@@ -24,9 +24,9 @@ use App\Models\Gereja;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -40,7 +40,7 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::get('/home', function () {
+Route::get('/', function () {
     $activities = Activity::orderBy('created_at', 'desc')->take(1)->get();
     return view('home',  ['activities' => $activities]);
 });
