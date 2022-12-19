@@ -85,7 +85,7 @@
   <!-- Left links -->
   <ul class="hidden lg:flex navbar-nav justify-center pl-0 list-style-none mr-auto xl:ml-[6.5em]">
     <li class="nav-item p-2 pr-[3em]">
-      <a class="nav-link text-white hover:text-slate-100 duration-200 ease-in-out focus:text-gray-700 p-0" href="home">Home</a>
+      <a class="nav-link text-white hover:text-slate-100 duration-200 ease-in-out focus:text-gray-700 p-0" href="/">Home</a>
     </li>
     <li class="nav-item p-2 pr-[3em] cursor-pointer">
       <div class="nav-link text-white hover:text-slate-100 duration-200 ease-in-out focus:text-gray-700 p-0" href="#">
