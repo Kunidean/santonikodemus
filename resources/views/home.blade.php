@@ -27,21 +27,21 @@
   <div class="carousel-inner relative w-full overflow-hidden">
     <div class="carousel-item active float-left w-full">
       <img
-        src="{{url('/asset/gambar1.jpg')}}"
+        src="{{ asset('/asset/gambar1.jpg') }}"
         class="block w-full h-[80vh]"
         alt="Wild Landscape"
       />
     </div>
     <div class="carousel-item float-left w-full">
       <img
-        src="{{url('/asset/gambar2.jpeg')}}"
+        src="{{ asset('/asset/gambar2.jpeg') }}"
         class="block w-full h-[80vh]"
         alt="Camera"
       />
     </div>
     <div class="carousel-item float-left w-full">
       <img
-        src="{{url('/asset/nikodemus.png')}}"
+        src="{{ asset('/asset/nikodemus.png') }}"
         class="block w-full h-[80vh]"
         alt="Exotic Fruits"
       />
@@ -75,7 +75,7 @@
         <div class="date-author">
             <h6 class="text-slate-100">Written on {{$activity->post_date}} by {{$activity->author}}</h6>
         </div>
-        <img width="200px" src="{{url('/photos/' . $activity->photo)}}">
+        <img width="200px" src="{{ asset('/photos/' . $activity->photo) }}">
         <p class="text-white">{{\Illuminate\Support\Str::limit($activity->description, 150)}}
             <a href="/activities/{{$activity->id}}" class="more text-white">More</a></p>
     </div>

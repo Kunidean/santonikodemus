@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/app.css')  }}" rel="stylesheet">
     @vite('resources/css/app.css')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
               <!-- CDN -->
@@ -20,6 +20,7 @@
      body {
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
+    
   </style>
   </head>
 <body>
@@ -65,7 +66,7 @@
           lg:mt-0
           mr-1
         " href="home">
-      <div href="home" class="w-[75px] h-[75px] bg-cover bg-[url(/public/asset/nikodemus.png)]" alt=""
+      <div href="home" class="w-[75px] h-[75px] bg-cover bg-[url({{ asset('/asset/nikodemus.png') }})]" alt=""
         loading="lazy"> </div>
     </a>
   <div class="flex justify-between items-center" id="navbarSupportedContent">
@@ -80,7 +81,7 @@
         lg:mt-0
         mr-1
       " href="home">
-    <div href="home" class="w-[75px] h-[75px] bg-cover bg-[url(/public/asset/nikodemus.png)]" alt=""> </div>
+    <div href="home" class="w-[75px] h-[75px] bg-cover bg-[url({{ asset('/asset/nikodemus.png') }})]" alt=""> </div>
   </a>
   <!-- Left links -->
   <ul class="hidden lg:flex navbar-nav justify-center pl-0 list-style-none mr-auto xl:ml-[6.5em]">
