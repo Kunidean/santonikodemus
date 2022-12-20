@@ -1,8 +1,4 @@
 {
-  "public/asset/pesan.png": {
-    "file": "assets/pesan.e0b9e475.png",
-    "src": "public/asset/pesan.png"
-  },
   "public/asset/telpon.png": {
     "file": "assets/telpon.63ddfa63.png",
     "src": "public/asset/telpon.png"
@@ -10,6 +6,10 @@
   "public/asset/nikodemus.png": {
     "file": "assets/nikodemus.eefbc794.png",
     "src": "public/asset/nikodemus.png"
+  },
+  "public/asset/pesan.png": {
+    "file": "assets/pesan.e0b9e475.png",
+    "src": "public/asset/pesan.png"
   },
   "resources/js/app.js": {
     "file": "assets/app.08a78f60.js",

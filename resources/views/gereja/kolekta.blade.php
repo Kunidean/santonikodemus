@@ -21,19 +21,20 @@
 
 <body>
 <div class="w-full h-[100vh] py-[1.5em]">
-<div class="w-full py-[1.5em]">
-  <div class="w-full h-auto flex pl-[3em] justify-end text-black font-bold">
-  @if(Auth::check())
-    <form action="/gerejas" method="post" class="text-blackfont-bold"> 
+  <div class="w-full py-[1.5em] bg-[#009CAD]">
+    <div class="w-full h-auto flex pl-[3em] justify-end text-slate-150 font-bold">
+   @if(Auth::check())
+    <form action="/gerejas" method="post" class="font-bold"> 
     @csrf
-    Tanggal: <br /> <input type="date" name="tanggal" class="text-black"/> <br />
-    Kolekte1: <input type="number" name="kolekte1" class="text-black"/> <br />
-    Kolekte2: <input type="number" name="kolekte2" class="text-black"/> <br />
-    <button type="submit">Submit</button>
+   <div class="text-white">Tanggal: <br /><input type="date" name="tanggal" class="text-slate-500"/>  </div> <br />
+   <div class="text-white">Kolekte1: <input type="number" name="kolekte1" class="text-slate-500"/></div> <br />
+   <div class="text-white">Kolekte2: <input type="number" name="kolekte2" class="text-slate-500"/></div> <br />
+   <div class="text-white"><button type="submit">Submit</button></div>
     </form>
     @endif
     <br />
-    <div class="w-full h-auto flex pl-[3em] justify-center text-black font-bold content-center">
+    
+    <div class="w-full h-auto flex pl-[3em] text-white justify-center text-slate-150 font-bold content-center">
       <table border="1" width="30%">
         <tr>
             <th>Tanggal</th>

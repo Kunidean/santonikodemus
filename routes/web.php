@@ -24,9 +24,9 @@ use App\Models\Gereja;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('home');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -52,7 +52,7 @@ Route::get('/', function () {
 
 Route::resource('berita', ActivityController::class);
 
-Route::get('/activities/home', function () {
+Route::get('/', function () {
     $activities = Activity::all();
     return view('home',  ['activities' => $activities]);
 });
@@ -82,6 +82,11 @@ Route::get('/batas', function () {
 Route::get('/pastur', function () {
     return view('pastur');
 });
+Route::get('/dewan', function () {
+    return view('dewan');
+});
+
+
 Route::get('/gereja/kolekta', function () {
     return view('gereja/kolekta');
 });

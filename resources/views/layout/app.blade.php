@@ -1,26 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @vite('resources/css/app.css')
+  @vite('resources/css/font.css')
+  @vite('resources/css/gambar.css')
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
+  <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=allerta:400|plus-jakarta-sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet" />
+<style>
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+</style>
+</head>
+
+<body>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="{{ asset('/css/app.css')  }}" rel="stylesheet">
+    <title>Santo Nikodemus</title>
     @vite('resources/css/app.css')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-              <!-- CDN -->
-              <script src="https://cdn.tailwindcss.com"></script>
-        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=allerta:400|plus-jakarta-sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet" />
     <style>
      body {
       font-family: 'Plus Jakarta Sans', sans-serif;
     }
-    
   </style>
   </head>
 <body>
@@ -65,8 +79,8 @@
           mt-2
           lg:mt-0
           mr-1
-        " href="home">
-      <div href="home" class="w-[75px] h-[75px] bg-cover bg-[url({{ asset('/asset/nikodemus.png') }})]" alt=""
+        " href="/">
+      <div href="/" class="w-[75px] h-[75px] bg-cover bg-[url(/public/asset/nikodemus.png)]" alt=""
         loading="lazy"> </div>
     </a>
   <div class="flex justify-between items-center" id="navbarSupportedContent">
@@ -80,8 +94,8 @@
         mt-2
         lg:mt-0
         mr-1
-      " href="home">
-    <div href="home" class="w-[75px] h-[75px] bg-cover bg-[url({{ asset('/asset/nikodemus.png') }})]" alt=""> </div>
+      " href="/">
+    <div href="/" class="w-[75px] h-[75px] bg-cover bg-[url(/public/asset/nikodemus.png)]" alt=""> </div>
   </a>
   <!-- Left links -->
   <ul class="hidden lg:flex navbar-nav justify-center pl-0 list-style-none mr-auto xl:ml-[6.5em]">
@@ -168,8 +182,8 @@
     <button type="button" class="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
-    <div>
-      <h5 class="text-base relative
+    <div >
+      <button class="text-base relative
         flex
         items-center
         w-full
@@ -179,7 +193,7 @@
         bg-white
         rounded-none
         transition
-        focus:outline-none">Home</h5>
+        focus:outline-none"><a href="/">Home</a></button>
     </div>
     <div class="accordion" id="accordionExample">
   <div class="accordion-item bg-white">
@@ -213,7 +227,7 @@
             <a href="sejarah" class="text-gray-800 hover:text-gray-700">Sejarah Paroki</a>
           </li>
           <li class="mb-2">
-            <a href="pastor" class="text-gray-800 hover:text-gray-700">Pastor Paroki</a>
+            <a href="pastur" class="text-gray-800 hover:text-gray-700">Pastor Paroki</a>
           </li>
           <li class="mb-2">
             <a href="dewan" class="text-gray-800 hover:text-gray-700">Dewan Paroki</a>
@@ -248,40 +262,19 @@
       <div class="accordion-body py-4 px-5">
         <ul class="list-unstyled">
           <li class="mb-2">
-            <a href="#" class="text-gray-800 hover:text-gray-700">Renungan</a>
+            <a href="renungan" class="text-gray-800 hover:text-gray-700">Renungan</a>
           </li>
           <li class="mb-2">
-            <a href="#" class="text-gray-800 hover:text-gray-700">Berita</a>
+            <a href="berita" class="text-gray-800 hover:text-gray-700">Berita</a>
           </li>
           <li class="mb-2">
-            <a href="#" class="text-gray-800 hover:text-gray-700">Aktivitas</a>
+            <a href="aktivitas" class="text-gray-800 hover:text-gray-700">Aktivitas</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="accordion-item bg-white">
-    <h2 class="accordion-header mb-0" id="headingThree">
-      <button class="
-        accordion-button
-        collapsed
-        relative
-        flex
-        items-center
-        w-full
-        py-4
-        px-5
-        text-base text-gray-800 text-left
-        bg-white
-        rounded-none
-        transition
-        focus:outline-none
-      " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-        aria-controls="collapseThree">
-        Sakramen
-      </button>
-    </h2>
-  </div>
+
   <div class="accordion-item bg-white">
     <h2 class="accordion-header mb-0" id="headingThree">
       <button class="
@@ -311,10 +304,16 @@
             <a href="https://belarasa.id/" class="text-gray-800 hover:text-gray-700">BELARASA</a>
           </li>
           <li class="mb-2">
+            <a href="https://www.kaj.or.id/" class="text-gray-800 hover:text-gray-700">Keuskupan Agung Jakarta</a>
+          </li>
+          <li class="mb-2">
             <a href="keuangan" class="text-gray-800 hover:text-gray-700">Keuangan</a>
           </li>
           <li class="mb-2">
             <a href="sekretariat" class="text-gray-800 hover:text-gray-700">Sekretariat</a>
+          </li>
+          <li class="mb-2">
+            <a href="sakramen" class="text-gray-800 hover:text-gray-700">Sakramen</a>
           </li>
         </ul>
       </div>
@@ -363,6 +362,5 @@
 <!-- <footer class="p-4 absolute w-full h-[3em] bottom-0 bg-white rounded-sm shadow md:flex md:items-center text-center md:justify-between md:p-6 bg-[#009CAD]">
     <span class="text-slate-100 hover:underline">© 2022 Copyright © All right reserved.</span>
 </footer> -->
-<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>

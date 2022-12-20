@@ -27,21 +27,21 @@
   <div class="carousel-inner relative w-full overflow-hidden">
     <div class="carousel-item active float-left w-full">
       <img
-        src="{{ asset('/asset/gambar1.jpg') }}"
+        src="{{url('/asset/gambar1.jpg')}}"
         class="block w-full h-[80vh]"
         alt="Wild Landscape"
       />
     </div>
     <div class="carousel-item float-left w-full">
       <img
-        src="{{ asset('/asset/gambar2.jpeg') }}"
+        src="{{url('/asset/gambar2.jpeg')}}"
         class="block w-full h-[80vh]"
         alt="Camera"
       />
     </div>
     <div class="carousel-item float-left w-full">
       <img
-        src="{{ asset('/asset/nikodemus.png') }}"
+        src="{{url('/asset/nikodemus.png')}}"
         class="block w-full h-[80vh]"
         alt="Exotic Fruits"
       />
@@ -67,15 +67,15 @@
   </button>
   </div>
 
-<h1 class="header-font pl-6 pt-4">Highlight: Recent News</h1>
 
+<br />
 @foreach($activities as $activity)
     <div class="aktivitas-sm rounded-lg">
         <h2 class="act-title text-white">{{$activity->title}}</h2>
         <div class="date-author">
             <h6 class="text-slate-100">Written on {{$activity->post_date}} by {{$activity->author}}</h6>
         </div>
-        <img width="200px" src="{{ asset('/photos/' . $activity->photo) }}">
+        <img width="200px" src="{{url('/photos/' . $activity->photo)}}">
         <p class="text-white">{{\Illuminate\Support\Str::limit($activity->description, 150)}}
             <a href="/activities/{{$activity->id}}" class="more text-white">More</a></p>
     </div>

@@ -1,9 +1,9 @@
 @extends('layout.app')
 
 @section('content')
-
-<h1 class="header-font pl-6 pt-4">Renungan Harian</h1>
-
+<div class="bg-[#009CAD] w-[17em] my-4 ml-4 rounded-md text-white">
+<h1 class="header-font">Renungan Harian</h1>
+</div>
 
 @foreach($devotions as $devotion)
     <div class="renungan-sm rounded-md">
