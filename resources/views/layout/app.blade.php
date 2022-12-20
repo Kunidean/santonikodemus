@@ -307,7 +307,7 @@
             <a href="https://www.kaj.or.id/" class="text-gray-800 hover:text-gray-700">Keuskupan Agung Jakarta</a>
           </li>
           <li class="mb-2">
-            <a href="keuangan" class="text-gray-800 hover:text-gray-700">Keuangan</a>
+            <a href="kolekta" class="text-gray-800 hover:text-gray-700">Keuangan</a>
           </li>
           <li class="mb-2">
             <a href="sekretariat" class="text-gray-800 hover:text-gray-700">Sekretariat</a>
