@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Santo Nikodemus</title>
     <link href="{{ asset('/css/app.css')  }}" rel="stylesheet">
     <!-- @vite('resources/css/app.css') -->
     <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
@@ -31,7 +31,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Santo Nikodemus</title>
     <!-- <link href="{{ asset('/css/app.css')  }}" rel="stylesheet"> -->
     <!-- @vite('resources/css/app.css') -->
     <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
@@ -82,20 +82,6 @@
   focus:text-gray-700
   ">
   <div class="container-fluid w-full flex items-center justify-between px-6">
-    <a class="
-          flex
-          xl:hidden
-          items-center
-          text-white
-          hover:text-gray-900
-          focus:text-gray-900
-          mt-2
-          lg:mt-0
-          mr-1
-        " href="home">
-      <div href="home" class="w-[75px] h-[75px] bg-cover bg-[url({{ asset('/asset/nikodemus.png') }})]" alt=""
-        loading="lazy"> </div>
-    </a>
   <div class="flex justify-between items-center" id="navbarSupportedContent">
   <a class="
         hidden
@@ -107,8 +93,8 @@
         mt-2
         lg:mt-0
         mr-1
-      " href="home">
-    <div href="home" class="w-[75px] h-[75px] bg-cover bg-[url({{ asset('/asset/nikodemus.png') }})]" alt=""> </div>
+      " href="/">
+    <div href="/" class="w-[75px] h-[75px] bg-cover bg-[url({{ asset('/asset/nikodemus.png') }})]" alt=""> </div>
   </a>
   <!-- Left links -->
   <ul class="hidden lg:flex navbar-nav justify-center pl-0 list-style-none mr-auto xl:ml-[6.5em]">
